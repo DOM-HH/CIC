@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>home pages</title>
+  <!-- Bootstap files -->
+  <link rel="stylesheet" href="../res/bootstrap@5.0.0-alpha2.min.css">
+  <link rel="stylesheet" href="../res/chartist.min.css">
+  <!--Text-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <!---------->
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    ul {}
+
+    #header {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+    }
+
+    button:focus {
+      outline: none;
+      border: none;
+    }
+
+    .t-html {
+      position: relative;
+      top: -50%;
+      left: 30%;
+      font-weight: bold;
+      color: white;
+      display: inline-block;
+      font-size: .8rem;
+    }
+
+    .bg-dark {
+      background: #0A1931 !important;
+    }
+
+    #menu-bar {
+      position: fixed;
+      top: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 100%;
+    }
+
+    #menu-bar>ul>li {
+      line-height: 3rem;
+      font-size: 1.3rem
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+  <div id="header" class="bg-light">
+    <div class="menu-box">
+      <button id="menuBtn" onclick="show()" class="p-3 menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </button>
+    </div>
+    <div id="menu-bar" class="bg-dark">
+      <h3 class="bg-light p-3 text-right">Menu</h3>
+      <ul class="text-light" style="margin-left:-2rem">
+        <li class="d-block text-center"><a href="#" class="text-none">Home</a></li>
+        <li class="d-block text-center"><a href="#" class="text-none">Home</a></li>
+        <li class="d-block text-center"><a href="#" class="text-none">Home</a></li>
+        <li class="d-block text-center"><a href="#" class="text-none">Home</a></li>
+        <li class="d-block text-center"><a href="#" class="text-none">Home</a></li>
+        <li class="d-block text-center"><a href="#" class="text-none">Home</a></li>
+        <button class="btn btn-outline-light float-right mx-3 mt-5" onclick="hide()">Close</button>
+      </ul>
+    </div>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col">
+          <img src="../media/logo.jpeg" alt="logo" class="w-50 rounded-circle logo">
+          <div class="row">
+            <div class="col">
+              <h5 class="bg-light py-2 px-3 rounded my-2 d-inline-block text-uppercase font-weight-bold text-primary" style="letter-spacing:1px;">CIC</h5>
+            </div>
+            <div class="col-12">
+              <h6 class="font-weight-bold text-secondary text-uppercase my-3 mx-3 float-right">
+                Code I Can
+              </h6>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="ml-4 p-2 text-secondary float-right pb-3" style="border-bottom: 2px lightgrey solid">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, perferendis.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, doloribus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-outline-primary float-right my-3 mb-3">Know more</a>
+    </div>
+  </div>
+  <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 360" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+        <stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop>
+        <stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <path style="transform:translate(0, 0px); opacity:1" fill="#1D68FE" d="M0,144L40,138C80,132,160,120,240,96C320,72,400,36,480,42C560,48,640,96,720,108C800,120,880,96,960,78C1040,60,1120,48,1200,48C1280,48,1360,60,1440,60C1520,60,1600,48,1680,60C1760,72,1840,108,1920,156C2000,204,2080,264,2160,270C2240,276,2320,228,2400,186C2480,144,2560,108,2640,96C2720,84,2800,96,2880,120C2960,144,3040,180,3120,192C3200,204,3280,192,3360,192C3440,192,3520,204,3600,228C3680,252,3760,288,3840,306C3920,324,4000,324,4080,312C4160,300,4240,276,4320,252C4400,228,4480,204,4560,204C4640,204,4720,228,4800,240C4880,252,4960,252,5040,234C5120,216,5200,180,5280,192C5360,204,5440,264,5520,288C5600,312,5680,300,5720,294L5760,288L5760,360L5720,360C5680,360,5600,360,5520,360C5440,360,5360,360,5280,360C5200,360,5120,360,5040,360C4960,360,4880,360,4800,360C4720,360,4640,360,4560,360C4480,360,4400,360,4320,360C4240,360,4160,360,4080,360C4000,360,3920,360,3840,360C3760,360,3680,360,3600,360C3520,360,3440,360,3360,360C3280,360,3200,360,3120,360C3040,360,2960,360,2880,360C2800,360,2720,360,2640,360C2560,360,2480,360,2400,360C2320,360,2240,360,2160,360C2080,360,2000,360,1920,360C1840,360,1760,360,1680,360C1600,360,1520,360,1440,360C1360,360,1280,360,1200,360C1120,360,1040,360,960,360C880,360,800,360,720,360C640,360,560,360,480,360C400,360,320,360,240,360C160,360,80,360,40,360L0,360Z"></path>
+  </svg>
+  <section class="container-fluid" style="background:#1D68FE; margin-top:-1rem">
+    <div class="row">
+      <div class="col">
+        <h5 class="bg-primary py-2 px-3 rounded my-5 d-inline-block text-uppercase font-weight-bold text-light" style="letter-spacing:1px;">CIC</h5>
+        <p class="text-light p-3 rounded" style="font-size:2rem;font-family: 'Italianno', cursive;">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti non et incidunt hic aliquam optio recusandae voluptate ullam, suscipit. Commodi debitis quasi mollitia accusamus ratione numquam cupiditate quae voluptas ea corporis non perferendis fugit quos, inventore ipsa nesciunt ipsam officia rem consectetur, distinctio esse ullam. Dolore quibusdam voluptatum, quisquam aperiam. " </p>
+      </div>
+    </div>
+  </section>
+  <svg id="wave" class="bg-dark" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+        <stop stop-color="rgba(17.462, 23.958, 205.338, 1)" offset="0%"></stop>
+        <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+    <path style="transform:translate(0, 0px); opacity:1" fill="#1D68FE" d="M0,392L80,367.5C160,343,320,294,480,302.2C640,310,800,376,960,334.8C1120,294,1280,147,1440,138.8C1600,131,1760,261,1920,285.8C2080,310,2240,229,2400,179.7C2560,131,2720,114,2880,155.2C3040,196,3200,294,3360,334.8C3520,376,3680,359,3840,351.2C4000,343,4160,343,4320,334.8C4480,327,4640,310,4800,294C4960,278,5120,261,5280,220.5C5440,180,5600,114,5760,81.7C5920,49,6080,49,6240,114.3C6400,180,6560,310,6720,334.8C6880,359,7040,278,7200,204.2C7360,131,7520,65,7680,81.7C7840,98,8000,196,8160,204.2C8320,212,8480,131,8640,81.7C8800,33,8960,16,9120,8.2C9280,0,9440,0,9600,40.8C9760,82,9920,163,10080,179.7C10240,196,10400,147,10560,130.7C10720,114,10880,131,11040,130.7C11200,131,11360,114,11440,106.2L11520,98L11520,490L11440,490C11360,490,11200,490,11040,490C10880,490,10720,490,10560,490C10400,490,10240,490,10080,490C9920,490,9760,490,9600,490C9440,490,9280,490,9120,490C8960,490,8800,490,8640,490C8480,490,8320,490,8160,490C8000,490,7840,490,7680,490C7520,490,7360,490,7200,490C7040,490,6880,490,6720,490C6560,490,6400,490,6240,490C6080,490,5920,490,5760,490C5600,490,5440,490,5280,490C5120,490,4960,490,4800,490C4640,490,4480,490,4320,490C4160,490,4000,490,3840,490C3680,490,3520,490,3360,490C3200,490,3040,490,2880,490C2720,490,2560,490,2400,490C2240,490,2080,490,1920,490C1760,490,1600,490,1440,490C1280,490,1120,490,960,490C800,490,640,490,480,490C320,490,160,490,80,490L0,490Z"></path>
+  </svg>
+  <section class="container-fluid bg-dark" style="margin-top: -10px">
+    <h3 class="font-weight-bold rounded-top py-2 px-3 d-inline-block my-4 text-white">Components of</h3>
+    <div class="row">
+      <div class="col">
+        <div class="row ">
+          <div class="col-3">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#FF0066" d="M64.8,-22.7C70.5,-3.6,52.2,21.6,29.5,37.3C6.7,53.1,-20.5,59.4,-39.6,47.2C-58.8,35.1,-69.8,4.4,-61.8,-17.9C-53.9,-40.1,-26.9,-54,1.3,-54.5C29.6,-54.9,59.1,-41.9,64.8,-22.7Z" transform="translate(100 100)" />
+            </svg>
+            <h3 class="t-html">HTML</h3>
+          </div>
+          <div class="col-3">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#FF0066" d="M64.8,-22.7C70.5,-3.6,52.2,21.6,29.5,37.3C6.7,53.1,-20.5,59.4,-39.6,47.2C-58.8,35.1,-69.8,4.4,-61.8,-17.9C-53.9,-40.1,-26.9,-54,1.3,-54.5C29.6,-54.9,59.1,-41.9,64.8,-22.7Z" transform="translate(100 100)" />
+            </svg>
+            <h3 class="t-html">CSS</h3>
+          </div>
+          <div class="col-3">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#FF0066" d="M64.8,-22.7C70.5,-3.6,52.2,21.6,29.5,37.3C6.7,53.1,-20.5,59.4,-39.6,47.2C-58.8,35.1,-69.8,4.4,-61.8,-17.9C-53.9,-40.1,-26.9,-54,1.3,-54.5C29.6,-54.9,59.1,-41.9,64.8,-22.7Z" transform="translate(100 100)" />
+            </svg>
+            <h3 class="t-html">JS</h3>
+          </div>
+          <div class="col-3">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#FF0066" d="M64.8,-22.7C70.5,-3.6,52.2,21.6,29.5,37.3C6.7,53.1,-20.5,59.4,-39.6,47.2C-58.8,35.1,-69.8,4.4,-61.8,-17.9C-53.9,-40.1,-26.9,-54,1.3,-54.5C29.6,-54.9,59.1,-41.9,64.8,-22.7Z" transform="translate(100 100)" />
+            </svg>
+            <h3 class="t-html">BS</h3>
+          </div>
+          <div class="col-3">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#FF0066" d="M64.8,-22.7C70.5,-3.6,52.2,21.6,29.5,37.3C6.7,53.1,-20.5,59.4,-39.6,47.2C-58.8,35.1,-69.8,4.4,-61.8,-17.9C-53.9,-40.1,-26.9,-54,1.3,-54.5C29.6,-54.9,59.1,-41.9,64.8,-22.7Z" transform="translate(100 100)" />
+            </svg>
+            <h3 class="t-html">GIT</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    document.getElementById('menu-bar').style.display = "none";
+    function show() {
+      document.getElementById('menu-bar').style.display = "block";
+    }
+    function hide() {
+      document.getElementById('menu-bar').style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
