@@ -16,15 +16,169 @@
     * {
       font-family: 'Poppins', sans-serif;
     }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+    }
+
+    button:focus {
+      outline: none;
+      border: none;
+      transform: rotate(90deg);
+      transition: all 1s;
+    }
+
+    .centerme {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header {
+      box-shadow: .1rem .1rem .8rem grey;
+      position: fixed;
+      top: 0;
+    }
+
+    .scrollbar {
+      width: 360px;
+      height: 3rem;
+      overflow: scroll;
+    }
+
+    .scrollbar-inner {
+      max-height: 3rem;
+      min-width: 100rem;
+      line-height: 3rem;
+    }
+
+    .menubar {
+      position: fixed;
+      top: 4rem;
+      width: 80%;
+      height: 90%;
+      overflow: scroll;
+    }
+
+    .menubar-inner {
+      min-height: 50rem;
+      max-width: 100%;
+      margin-left: -0rem;
+    }
+
+    .menubarAni {
+      animation: ani1 1s 1;
+    }
+
+    @keyframes ani1 {
+      from {
+        margin-left: -20rem;
+      }
+
+      to {
+        margin-left: 0rem;
+      }
+    }
+
+    #main {
+      margin-top: 10rem;
+    }
   </style>
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col"></div>
+  <!-- header -->
+  <div class="container-fluid header bg-white">
+    <div class="row bg-white">
+      <!-- menu box -->
+      <div class="col centerme">
+        <button id="menuBtn" onclick="show()" class="p-3 menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+      </div>
+      <!-- logo box -->
+      <div class="col">
+        <img src="../media/logo.jpeg" alt="" class="w-100">
+      </div>
+      <!-- search box -->
+      <div class="col centerme">
+        <button class="p-3 menu-btn" onclick="search()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- scrollbar box -->
+    <div class="row scrollbar bg-light">
+      <div class="col scrollbar-inner">
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+        <a href="#" class="px-3">Data Structure</a>
+      </div>
     </div>
   </div>
+  <!-- header -->
+  <div class="menubar" id="menubar">
+    <div class="menubar-inner bg-white" id="menubarInner">
+      <br> <br>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+      <a href="#" class="p-3">Home</a>
+      <hr>
+    </div>
+  </div>
+  <section id="main">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis harum neque quas et voluptas impedit consequatur quibusdam molestias ullam, voluptatem, magnam quae expedita voluptatum. Voluptatibus architecto mollitia, vero necessitatibus alias aliquid maxime similique dolorem fuga dolore vitae assumenda obcaecati blanditiis, cum porro voluptatem et deserunt tempore quasi sint nobis, nulla temporibus cupiditate, quis explicabo? Totam iure deleniti, necessitatibus laborum porro magni quis, eligendi molestias voluptas, at facere ut dolore ipsam sed iusto animi incidunt a commodi quidem, fuga quibusdam reiciendis praesentium natus sunt! Molestias quis quo culpa enim, quam labore dolor libero, ad molestiae veritatis dolores corporis ex quia nesciunt blanditiis corrupti officia rerum voluptates! Fugiat aut amet dolore culpa quam molestiae ullam, aliquam unde asperiores placeat qui, enim officia earum nobis maxime quaerat, consectetur dicta debitis. Commodi placeat fuga aut libero iusto quidem, nobis necessitatibus illo tempore eaque quae voluptatum! Dolor iste aliquid quos molestias dolore ad facere, dolorem aperiam, eaque voluptatibus ipsum sapiente rem saepe eveniet nesciunt earum cum. Numquam in expedita, nisi dicta mollitia dolore voluptates tempora ipsa quia rem, facilis, sed eaque fugiat officia asperiores aspernatur ducimus architecto, veritatis assumenda vero pariatur odit? Laudantium ullam sapiente error ab aspernatur ipsam architecto ratione asperiores harum, optio cumque ut deserunt alias, quos aut eligendi reprehenderit, enim fugit totam natus. Laborum cumque necessitatibus amet, cum quos, quaerat consectetur natus molestias perspiciatis omnis numquam perferendis incidunt, ipsum reiciendis consequatur nulla accusamus deleniti. Reiciendis quasi iste minima adipisci temporibus voluptatum eaque, animi necessitatibus voluptas, libero, officiis? Quae at accusamus eos, aliquid officiis dolorum aut quos hic, fuga maiores recusandae adipisci. Iste eligendi pariatur incidunt ipsa doloribus, nemo, dicta veniam modi necessitatibus error maiores nobis facere nesciunt, magni iure nam deserunt consequuntur rem! Accusantium sequi iste nam quas tempora eaque, qui reiciendis, enim pariatur perspiciatis dolorem odit facere at facilis distinctio est sunt nesciunt nisi odio non! Enim voluptatem corporis quas corrupti praesentium laborum quos incidunt sit? Necessitatibus sequi deserunt eaque quo suscipit facilis illo illum natus labore, animi veritatis aliquid non odit, rem cum sint dolores pariatur commodi! Deserunt, aliquid aspernatur ipsum minima iste! Dicta dolorum animi, possimus nobis delectus doloremque pariatur dolor eos expedita ad molestiae necessitatibus tenetur praesentium laboriosam iusto perspiciatis dolores autem consectetur vero officia nihil omnis! Laboriosam veritatis doloribus voluptatibus ab dolore rerum distinctio quis accusantium quos architecto nobis amet ut officia ducimus fuga deleniti enim similique natus laudantium, illum molestias dolorum consequatur? Quas quia iure omnis, doloribus consequuntur accusantium optio a, praesentium excepturi distinctio voluptatibus ut blanditiis quasi. Eius provident, error non aut. Obcaecati ex repellat earum debitis amet, qui deserunt, nam expedita ipsum autem, magni laudantium provident laborum quaerat quod. Porro eum praesentium error repudiandae quae aspernatur enim aut voluptate natus minus itaque tenetur cum nisi atque delectus omnis voluptates quas, modi eius consequuntur. Natus architecto dolorum qui ut quaerat! Mollitia quisquam quis numquam explicabo, magnam, ea id qui doloremque sapiente voluptatum, reiciendis, repudiandae voluptatem accusantium odio nihil sunt. Repellendus veniam accusamus voluptatibus asperiores fugiat nihil, suscipit neque consectetur. Incidunt doloribus earum aperiam, numquam ex blanditiis! Ratione earum, minus, voluptate iste sint aperiam in tenetur pariatur at ea ex magnam perspiciatis maiores quisquam quia nesciunt esse dolore nihil adipisci magni blanditiis amet consequatur ut. Culpa accusantium sed, ipsum dolores perferendis iure aliquid illum nisi voluptates sit neque! Nostrum ipsam rem officiis voluptates nisi numquam qui ea mollitia obcaecati dolores, laboriosam ducimus maiores repudiandae odio recusandae deserunt aperiam. Voluptas accusamus, illo deleniti delectus ad. Veniam unde accusamus at non voluptate minus eveniet ducimus alias. Repellendus nobis quidem voluptatum cumque eaque, deserunt nemo magni illo sed deleniti expedita saepe commodi perspiciatis hic, modi, facilis reiciendis repellat consequuntur earum ab! Laboriosam alias possimus maxime commodi itaque pariatur quo, expedita atque aliquid amet, ut sunt provident eius sequi explicabo consectetur similique distinctio et. Ipsa fugiat eum dolores omnis similique, saepe alias amet distinctio suscipit sequi est ut magnam veniam quod. Saepe sunt esse deserunt placeat neque, deleniti delectus, in dolorem dolores? Asperiores atque minima ex laudantium quis eveniet. Ut ullam consectetur fugit nam! Similique, aliquam veniam eius, consequuntur deserunt ab numquam recusandae labore aliquid dolorum a? Impedit qui, vero voluptatibus exercitationem earum animi neque tempora iusto beatae placeat sunt dolorem ad dolor voluptas dolores suscipit quod rerum eos temporibus distinctio, eius sed esse iure magnam. Iure omnis dolores, illum optio nostrum expedita quasi repudiandae. Eos similique odio reprehenderit et odit atque culpa consectetur, nesciunt quae maxime aliquam minima. Eligendi debitis voluptatibus facere assumenda cumque ex dolorem consequuntur animi, veniam, corrupti qui voluptatum dolor. Temporibus eos quam ipsa, sapiente numquam, animi adipisci culpa quia incidunt, distinctio saepe quidem vitae laudantium, deserunt iusto velit explicabo. Id culpa mollitia, fugit qui totam quibusdam commodi ad. Dolorum laborum dolor doloremque id accusamus, temporibus dolores. Saepe expedita velit, ipsum facere ratione doloremque et, vitae, ex rerum quia dolore quibusdam non fugiat ducimus, corporis magni commodi. Nemo temporibus, ea at, rem illum iure dolorum necessitatibus in deleniti eum officia sapiente. Voluptatum quasi necessitatibus voluptate. Rem ipsum modi tenetur fugiat nam hic eligendi enim odio minima officiis porro qui cum quod consectetur dolore esse corporis mollitia nemo explicabo, delectus nesciunt! Consequuntur iusto repudiandae sequi nemo ea, incidunt architecto nostrum dicta error ab at est voluptatem rerum itaque harum ullam sunt tenetur eos laudantium! Nam minima porro neque nulla aperiam, non ratione necessitatibus facere, hic eum, modi explicabo. Consequuntur totam autem perferendis libero atque quia, incidunt esse amet quam est ut, numquam odio nulla blanditiis consectetur magni nemo necessitatibus exercitationem consequatur, fugit? Eum totam cupiditate aliquid soluta voluptatem voluptas laboriosam deserunt, iste illum placeat, cum amet veritatis! Hic itaque unde voluptatem ad ut voluptates rerum sed velit minima non assumenda, nulla, possimus nemo explicabo eos, nesciunt esse officiis amet a repudiandae soluta reiciendis ea quibusdam iusto. Et animi vitae voluptatum saepe ex. Sunt consequuntur ut minus quaerat distinctio laborum doloremque perspiciatis totam, esse asperiores nisi ea voluptas quos unde. Neque explicabo nesciunt officia similique cupiditate, sint suscipit! Velit nesciunt autem nam quaerat ad alias odit, facilis qui quidem possimus quod, earum, odio dolorum debitis. Voluptatum, magnam, corrupti.
+  </section>
+  <script>
+    var x = document.getElementById('menubar');
+    x.style.display = "none";
+
+    function show() {
+      if (x.style.display == 'none') {
+        x.style.display = 'block';
+      } else {
+        x.style.display = 'none';
+      }
+      document.getElementById('menubarInner').classList.add('menubarAni');
+    }
+
+    function search() {
+
+    }
+  </script>
 </body>
 
 </html>
