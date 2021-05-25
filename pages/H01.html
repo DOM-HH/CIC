@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>H01</title>
+  <link rel="stylesheet" href="../res/bootstrap@5.0.0-alpha2.min.css">
+  <link rel="stylesheet" href="../res/chartist.min.css">
+  <!--Text-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
+  <style>
+    .header {
+      box-shadow: none;
+      position: static;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <div class="container-fluid header bg-white">
+    <div class="row bg-white">
+      <!-- logo box -->
+      <div class="col centerme  justify-content-start">
+        <img src="../media/logo.jpeg" alt="" class="w-50 logo-img">
+      </div>
+      <!-- menu box -->
+      <div class="col centerme justify-content-end">
+        <button id="menuBtn" onclick="show()" class="p-3 menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- header -->
+    <!--- Menu bar (hidden)-->
+    <div class="menubar" id="menubar" style="position: absolute; z-index:999">
+      <div class="menubar-inner bg-white" id="menubarInner">
+        <br> <br>
+        <a href="#" class="p-3">Home</a>
+        <hr>
+        <a href="#" class="p-3">Home</a>
+        <hr>
+        <a href="#" class="p-3">Home</a>
+        <hr>
+        <a href="#" class="p-3">Home</a>
+        <hr>
+        <a href="#" class="p-3">Home</a>
+        <hr>
+        <a href="#" class="p-3">Home</a>
+        <hr>
+        <a href="#" class="p-3">Home</a>
+        <hr>
+        <a href="#" class="p-3">Home</a>
+        <hr>
+        <a href="#" class="p-3">Home</a>
+        <hr>
+        <a href="#" class="p-3">Home</a>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <section class="">
+    <div class="container-fluid">
+      <div class="row bg-primary">
+        <h1 class="font-weight-bold text-light py-3" style="letter-spacing: 1px;">Lorem ipsum dolor sit amet.</h1>
+        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur praesentium neque earum in distinctio totam, molestias obcaecati rem magni. Sint.</p>
+      </div>
+    </div>
+    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s; width: 100%" viewBox="0 0 1440 380" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop>
+          <stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path style="transform:translate(0, 0px); opacity:1" fill="#0D6EFD" d="M0,76L48,120.3C96,165,192,253,288,259.7C384,266,480,190,576,164.7C672,139,768,165,864,152C960,139,1056,89,1152,69.7C1248,51,1344,63,1440,107.7C1536,152,1632,228,1728,221.7C1824,215,1920,127,2016,76C2112,25,2208,13,2304,31.7C2400,51,2496,101,2592,107.7C2688,114,2784,76,2880,69.7C2976,63,3072,89,3168,88.7C3264,89,3360,63,3456,101.3C3552,139,3648,241,3744,240.7C3840,241,3936,139,4032,133C4128,127,4224,215,4320,240.7C4416,266,4512,228,4608,190C4704,152,4800,114,4896,114C4992,114,5088,152,5184,139.3C5280,127,5376,63,5472,82.3C5568,101,5664,203,5760,215.3C5856,228,5952,152,6048,158.3C6144,165,6240,253,6336,272.3C6432,291,6528,241,6624,234.3C6720,228,6816,266,6864,285L6912,304L6912,380L6864,380C6816,380,6720,380,6624,380C6528,380,6432,380,6336,380C6240,380,6144,380,6048,380C5952,380,5856,380,5760,380C5664,380,5568,380,5472,380C5376,380,5280,380,5184,380C5088,380,4992,380,4896,380C4800,380,4704,380,4608,380C4512,380,4416,380,4320,380C4224,380,4128,380,4032,380C3936,380,3840,380,3744,380C3648,380,3552,380,3456,380C3360,380,3264,380,3168,380C3072,380,2976,380,2880,380C2784,380,2688,380,2592,380C2496,380,2400,380,2304,380C2208,380,2112,380,2016,380C1920,380,1824,380,1728,380C1632,380,1536,380,1440,380C1344,380,1248,380,1152,380C1056,380,960,380,864,380C768,380,672,380,576,380C480,380,384,380,288,380C192,380,96,380,48,380L0,380Z"></path>
+    </svg>
+    <div class="cotainer">
+      <div class="row">
+        <div class="col bg-dark" style="height: 300px">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col bg-secondary" style="height: 300px"></div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <script src="../code/code.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

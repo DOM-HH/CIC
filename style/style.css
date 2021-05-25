@@ -1,0 +1,118 @@
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-left: -2rem;
+    }
+
+    li {
+      text-align: center;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+    }
+
+    button:focus {
+      outline: none;
+      border: none;
+      transform: rotate(90deg);
+      transition: all 1s;
+    }
+
+    .centerme {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header {
+      box-shadow: .1rem .1rem .8rem grey;
+      position: fixed;
+      top: 0;
+    }
+
+    .scrollbar {
+      width: 360px;
+      height: 3rem;
+      overflow: scroll;
+    }
+
+    .scrollbar-inner {
+      max-height: 3rem;
+      min-width: 100rem;
+      line-height: 3rem;
+    }
+
+    .menubar {
+      position: fixed;
+      top: 4rem;
+      width: 80%;
+      height: 90%;
+      overflow: scroll;
+    }
+
+    .menubar-inner {
+      min-height: 50rem;
+      max-width: 100%;
+      margin-left: -0rem;
+    }
+
+    .menubarAni {
+      animation: ani1 1s 1;
+    }
+
+    @keyframes ani1 {
+      from {
+        margin-left: -20rem;
+      }
+
+      to {
+        margin-left: 0rem;
+      }
+    }
+
+    #main {
+      margin-top: 10rem;
+    }
+
+    .search-box {
+      width: 200px;
+      height: 3rem;
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+    }
+
+    /* Media Quarries */
+    @media screen and (min-width:400px) {
+      body {}
+
+      .logo-img {
+        width: 100px !important;
+      }
+
+      .scrollbar {
+        width: 100%;
+      }
+
+      .search-box {
+        width: 300px;
+        height: 3rem;
+        position: fixed;
+        top: 1rem;
+        left: 15rem;
+      }
+
+      li {
+        text-align: left;
+      }
+    }
