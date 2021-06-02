@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="../res/chartist.min.css">
   <!--Text-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
   <style type="text/css" media="all">
     * {
-      font-family: 'Poppins', sans-serif;
+      /*font-family: 'Poppins', sans-serif;*/
+      font-family: 'Ubuntu', sans-serif;
+
     }
 
     a {
@@ -53,6 +53,7 @@
       box-shadow: .1rem .1rem .8rem grey;
       position: fixed;
       top: 0;
+      z-index: 999;
     }
 
     .scrollbar {
@@ -107,6 +108,23 @@
       left: 1rem;
     }
 
+    /* Private Clasess*/
+    .article-head {
+      margin-top: .2rem;
+      font-size: 1.2rem;
+      opacity: .9;
+    }
+
+    .article-body {
+      font-size: .8rem;
+      margin: 0;
+      padding: 0;
+      opacity: .7;
+    }
+
+    .article-body::after {}
+
+
     /* Media Quarries */
     @media screen and (min-width:400px) {
       body {}
@@ -137,7 +155,7 @@
 <body>
   <!-- header -->
   <div class="container-fluid header bg-white">
-    <div class="row bg-white">
+    <div class="row bg-white" style="height: 3rem">
       <!-- menu box -->
       <div class="col centerme">
         <button id="menuBtn" onclick="show()" class="p-3 menu-btn">
@@ -206,8 +224,64 @@
   <div class="form-group search-box" id="sb">
     <input type="text" class="form-control" placeholder="Search here...">
   </div>
-  <section id="main">
-    
+  <section id="main" class="container-fluid">
+    <div class="row">
+      <!-- Article Are here -->
+      <div class="col-md-6">
+        <div class="row">
+          <!-- Article C1 -->
+          <div class="col-12">
+            <div class="card">
+              <img class="card-img-top" src="../media/M.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text text-secondary" style="font-size: .8rem">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                <a href="#" style="color: green">read more</a>
+              </div>
+            </div>
+          </div>
+          <!-- Article C2 -->
+          <div class="col-12 mt-3">
+            <!--<h3 class="py-3 text-info">Articles</h3>-->
+            <div class="row">
+              <div class="col">            <h3 class="py-3 text-info">Articles</h3>
+</div>
+            </div>
+            <div class="row">
+              <!-- Article C2.1-->
+              <div class="col my-1">
+                <h4 class="article-head">Lorem ipsum dolor sit amet.</h4>
+                <p class="article-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, placeat
+                  <a href="#" class="mx-3" style="color: green">read more</a>
+                </p>
+                <a href="#" style="color: green">...</a>
+              </div>
+              <hr>
+              <!-- Article C2.2-->
+              <div class="col my-1">
+                <h4 class="article-head">Lorem ipsum dolor sit amet.</h4>
+                <p class="article-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, placeat
+                  <a href="#" class="mx-3" style="color: green">read more</a>
+                </p>
+                <a href="#" style="color: green">...</a>
+              </div>
+              <hr>
+              <!-- Article C2.2-->
+              <div class="col my-1">
+                <h4 class="article-head">Lorem ipsum dolor sit amet.</h4>
+                <p class="article-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, placeat
+                  <a href="#" class="mx-3" style="color: green">read more</a>
+                </p>
+                <a href="#" style="color: green">...</a>
+              </div>
+              <hr>
+              <!-- Article C2.2-->
+            </div>
+          </div>
+        </div>
+        <!-- Others are here -->
+        <div class="col-md-6"></div>
+      </div>
   </section>
   <script src="../code/code.js" type="text/javascript" charset="utf-8"></script>
 </body>
